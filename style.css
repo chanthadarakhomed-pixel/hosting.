@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.nav-bottom{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+.nav-iteam-bottom{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.active{
+    color: rgb(255, 123, 0);
+}
+@media (max-width: 768px){
+    .nav-bottom{
+        display: flex;
+    }
+}
+.MedLove {
+    background-color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    height: 50px;
+    border-radius: 10px;
+}
+.Med-item {
+    text-decoration: none;
+    padding: 20px;
+    color: white;
+    display: block;
+}
+.Med-List {
+    display: flex;
+    list-style: none;
+    color: white;
+}
+
+.logo {
+    width: 35px;
+    height: 30px;
+}
+
+.Button {
+    padding: 6px;
+    margin-right: 20px;
+    background-color: rgba(255, 255, 0, 0.679);
+    border: none;
+    border-radius: 10px;
+}
+
+.Button:hover {
+    color: rgba(255, 255, 0, 0.719);
+    cursor: pointer;
+}
+
+.text {
+    color: red;
+    font-size: 64px;
+    margin: 50px;
+}
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+    background-color: black;
+    width: 100%;
+    border: 15px solid white;
+    padding: 30px;
+    margin: 15px;
+}
+
+.product-card {
+    background-color: white;
+    padding: 15px;
+}
+
+.product-card img {
+    width: 100%;
+    height: 200px;
+}
+
+/* Laptop view */
+@media (max-width: 1200px) {
+    .text {
+        color: green;
+        background-color: blue;
+        font-size: 54px;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Tablet view */
+@media (max-width: 992px) {
+    .text {
+        font-size: 32px;
+    }
+}
+
+/* Mobil view */
+@media (max-width: 768px) {
+    .text {
+        font-size: 35px;
+        color: black;
+        background-color: white;
+    }
+
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
